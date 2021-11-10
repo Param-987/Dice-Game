@@ -1,3 +1,9 @@
+window.onload = function() {
+      document.querySelector('#edit').addEventListener('click',()=>{
+      document.querySelector('#p1').innerHTML = document.querySelector('#player1').value;
+      document.querySelector('#p2').innerHTML = document.querySelector('#player2').value;
+    })
+}
 
 function now( x , y)
 {
