@@ -18,12 +18,26 @@
 </head>
 <body> 
    <div> <h1>Refresh Me</h1> </div>
-    <span class="st" >Player1</span ><span id="nd" >Player2</span>
+    <span class="st" id="p1" >Player1</span ><span id="p2" >Player2</span>
     <img src="../photo/dice6.png" alt="6" class="one st">
     <img src="../photo/dice6.png" alt="6" class="two">
-    <button type="button" onclick="change()">
+    <button type="button" onclick="change()" class="click">
         Click Me to play!!
     </button>
+    <div>
+    <label for="player1">Player 1 Name:<input type="text"  placeholder="Player1" id="player1"></label>
+    <label for="player2">Player 2 Name:<input type="text"  placeholder="Player2" id="player2"></label>
+    <button id="edit">EDIT</button>
+    
+</div>
+<script>
+     document.querySelector('#edit').addEventListener('click',()=>{
+     console.log('PAram');
+     document.querySelector('#p1').innerHTML = document.querySelector('#player1').value;
+     document.querySelector('#p2').innerHTML = document.querySelector('#player2').value;
+
+ })
+</script>
     
 
     

@@ -1,3 +1,4 @@
+
 function now( x , y)
 {
     if(x==1)document.getElementsByClassName("one")[0].src="../photo/dice1.png";
@@ -16,6 +17,8 @@ function now( x , y)
 
 
  function change() {
+    var player1  = document.querySelector('#player1').value;
+    var player2  = document.querySelector('#player2').value;
     var x=Math.floor(Math.random()*6+1);
     var y=Math.floor(Math.random()*6+1);
     document.getElementsByTagName("button")[0].innerHTML="CONTINUE";
@@ -25,12 +28,13 @@ function now( x , y)
         now(x,y);
     }
      else if(x>y){
-        document.getElementsByTagName("h1")[0].innerHTML='<img id="flag" src="photo/flag2 (1).png" alt="">Player1 wins';
+        document.getElementsByTagName("h1")[0].innerHTML=`<img id="flag" src="photo/flag2 (1).png" alt="">${player1} wins`;
         now(x,y);
     }
     else {
-        document.getElementsByTagName("h1")[0].innerHTML='<img id="flag" src="photo/flag2 (1).png" alt="">Player2 Wins';
+        document.getElementsByTagName("h1")[0].innerHTML=`<img id="flag" src="photo/flag2 (1).png" alt="">${player2} Wins`;
         now(x,y);
     }
 
  }
+
