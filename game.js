@@ -7,18 +7,18 @@ window.onload = function() {
 
 function now( x , y)
 {
-    if(x==1)document.getElementsByClassName("one")[0].src="photo/dice1.png";
-    if(x==2)document.getElementsByClassName("one")[0].src="photo/dice2.png";
-    if(x==3)document.getElementsByClassName("one")[0].src="photo/dice3.png";
-    if(x==4)document.getElementsByClassName("one")[0].src="photo/dice4.png";
-    if(x==5)document.getElementsByClassName("one")[0].src="photo/dice5.png";
-    if(x==6)document.getElementsByClassName("one")[0].src="photo/dice6.png";
-    if(y==1)document.getElementsByClassName("two")[0].src="photo/dice1.png";
-    if(y==2)document.getElementsByClassName("two")[0].src="photo/dice2.png";
-    if(y==3)document.getElementsByClassName("two")[0].src="photo/dice3.png";
-    if(y==4)document.getElementsByClassName("two")[0].src="photo/dice4.png";
-    if(y==5)document.getElementsByClassName("two")[0].src="photo/dice5.png";
-    if(y==6)document.getElementsByClassName("two")[0].src="photo/dice6.png";
+    if(x==1)document.querySelector("#p1").src="photo/dice1.png";
+    if(x==2)document.querySelector("#p1").src="photo/dice2.png";
+    if(x==3)document.querySelector("#p1").src="photo/dice3.png";
+    if(x==4)document.querySelector("#p1").src="photo/dice4.png";
+    if(x==5)document.querySelector("#p1").src="photo/dice5.png";
+    if(x==6)document.querySelector("#p1").src="photo/dice6.png";
+    if(y==1)document.querySelector("#p2").src="photo/dice1.png";
+    if(y==2)document.querySelector("#p2").src="photo/dice2.png";
+    if(y==3)document.querySelector("#p2").src="photo/dice3.png";
+    if(y==4)document.querySelector("#p2").src="photo/dice4.png";
+    if(y==5)document.querySelector("#p2").src="photo/dice5.png";
+    if(y==6)document.querySelector("#p2").src="photo/dice6.png";
 }
 
 
