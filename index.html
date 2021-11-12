@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <style>
+        body {
+            background-color:rgb(0, 0, 0,0.7);
+            margin: 0px; 
+            color: aqua; 
+        }
+    </style>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js"></script>
+    
+</head>
+<body> 
+   <div> <h1>Refresh Me</h1> </div>
+    <span class="st" id="p1" >Player1</span ><span id="p2" >Player2</span>
+    <img src="../photo/dice6.png" alt="6" class="one st">
+    <img src="../photo/dice6.png" alt="6" class="two">
+    <button type="button" onclick="change()" class="click">
+        Click Me to play!!
+    </button>
+    <div>
+    <label for="player1">Player 1 Name:<input type="text"  placeholder="Player1" id="player1"></label>
+    <label for="player2">Player 2 Name:<input type="text"  placeholder="Player2" id="player2"></label>
+    <button id="edit">EDIT</button>
+</div> 
+
+</body>
+</html>
