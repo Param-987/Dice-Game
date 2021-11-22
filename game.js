@@ -1,26 +1,17 @@
 window.onload = function() {
       document.querySelector('#edit').addEventListener('click',()=>{
-      document.querySelector('#p1').innerHTML = document.querySelector('#player1').value;
-      document.querySelector('#p2').innerHTML = document.querySelector('#player2').value;
+      document.querySelector('#p01').innerHTML = document.querySelector('#player1').value;
+      document.querySelector('#p02').innerHTML = document.querySelector('#player2').value;
     })
 }
 
 function now( x , y)
 {
+    console.log(x,y);
     document.querySelector('#p1').src = `photo/dice${x}.png`
+    // document.querySelector('#p1').src = `photo/dice${x}.png`
     document.querySelector('#p2').src = `photo/dice${y}.png`
-    // if(x==1)document.querySelector("#p1").src="photo/dice1.png";
-    // else if(x==2)document.querySelector("#p1").src="photo/dice2.png";
-    // else if(x==3)document.querySelector("#p1").src="photo/dice3.png";
-    // else if(x==4)document.querySelector("#p1").src="photo/dice4.png";
-    // else if(x==5)document.querySelector("#p1").src="photo/dice5.png";
-    // else if(x==6)document.querySelector("#p1").src="photo/dice6.png";
-    // if(y==1)document.querySelector("#p2").src="photo/dice1.png";
-    // if(y==2)document.querySelector("#p2").src="photo/dice2.png";
-    // if(y==3)document.querySelector("#p2").src="photo/dice3.png";
-    // if(y==4)document.querySelector("#p2").src="photo/dice4.png";
-    // if(y==5)document.querySelector("#p2").src="photo/dice5.png";
-    // if(y==6)document.querySelector("#p2").src="photo/dice6.png";
+
 }
 
 
