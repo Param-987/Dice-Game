@@ -1,17 +1,10 @@
-window.onload = function() {
-      document.querySelector('#edit').addEventListener('click',()=>{
-      document.querySelector('#p01').innerHTML = document.querySelector('#player1').value;
-      document.querySelector('#p02').innerHTML = document.querySelector('#player2').value;
-    })
-}
-
+document.addEventListener('keydown',(e)=>{
+    if(e.key =='enter'){console.log(e.key); change();}
+})
 function now( x , y)
 {
-    console.log(x,y);
     document.querySelector('#p1').src = `photo/dice${x}.png`
-    // document.querySelector('#p1').src = `photo/dice${x}.png`
     document.querySelector('#p2').src = `photo/dice${y}.png`
-
 }
 
 
@@ -26,14 +19,10 @@ function now( x , y)
         document.getElementsByTagName("h1")[0].innerHTML="DRAW";
         now(x,y);
     }
-     else if(x>y){
-        document.getElementsByTagName("h1")[0].innerHTML=`<img id="flag" src="photo/flag2 (1).png" alt="">${player1} Wins`;
-        now(x,y);
+    else{
+        let pia;
+        x>y ? pia = player1 : pia = player2;
+        document.getElementsByTagName("h1")[0].innerHTML=`<img id="flag" src="photo/flag2 (1).png" alt="">${pia} Wins`;
+        now(x,y) 
     }
-    else {
-        document.getElementsByTagName("h1")[0].innerHTML=`<img id="flag" src="photo/flag2 (1).png" alt="">${player2} Wins`;
-        now(x,y);
-    }
-
  }
-
