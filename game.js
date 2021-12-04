@@ -26,3 +26,12 @@ function now( x , y)
         now(x,y) 
     }
  }
+
+ document.querySelector('#edit').addEventListener('click',()=>{
+     let x = document.getElementById('player1').value;
+     let y = document.getElementById('player2').value;
+     document.querySelector('#p01').innerHTML = x;
+     document.querySelector('#p02').innerHTML = y;
+
+
+ })

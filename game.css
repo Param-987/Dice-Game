@@ -1,3 +1,4 @@
+*{font-family:'Roboto Slab', serif;}
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -16,17 +17,17 @@ span.st { margin-left: 38%;
 }
 input[type="text"],label
 {
-    font-size:17px;
+    font-size:16px;
 }
 label{
     margin-left: 15px;
+    font-size: 18px;
 }
 
 .one,.two {margin-top: 10px;}
-.flag {
-    padding-top: 100px;
-    height: 100px;
-    margin-top: 100px;
+#flag {
+    height:70px;
+
     
 }
 img.st {
